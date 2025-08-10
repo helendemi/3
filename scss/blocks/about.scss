@@ -1,0 +1,250 @@
+@import '../variables';
+
+.about {
+  padding: 57px 0;
+  position: relative;
+
+
+  .about-bk {
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+  }
+
+  .about-bk {
+    span {
+      position: relative;
+      color: $grayscaleblack;
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+
+  .about-bk span::before {
+    display: block;
+    width: 534px;
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid #000;
+    top: 50%;
+    left: 103px;
+
+  }
+
+  .about-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 140%;
+    max-width: 550px;
+    color: $Grayscale50;
+    margin-bottom: 5px;
+
+
+  }
+
+      &__img {
+        width: 100%;
+        height: 100%;
+
+          .images {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+
+          }
+      }
+
+  .place {
+    padding: 46px 5px;
+    text-align: left;
+    margin-right: 532px;
+    font-size: 18px;
+    font-weight: lighter;
+  }
+  .image-text {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-left: 50px;
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+
+  .image-text img {
+    max-width: 100%;
+    margin-right: 10px;
+
+  }
+
+  .image-text p {
+    word-wrap: break-word;
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+
+
+  .infrast {
+    text-align: left;
+    padding: 46px;
+    padding-left: 500px;
+
+  }
+  .infrast p {
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+  .about-button {
+    padding-left: 500px;
+    padding-bottom: 50px;
+    font-size: 14px;
+    font-weight: normal;
+
+
+  }
+
+  .button {
+    color: #fff;
+    padding: 14px 32px;
+    background: $PrimaryBlue100;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: $PrimaryBlue100;
+    color: aliceblue;
+  }
+
+  
+
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  .about {
+
+    padding: 57px;
+  }
+
+  .about-bk {
+    span::before {
+      display: block;
+      width: 534px;
+      content: '';
+      position: absolute;
+      border-bottom: 2px solid #000;
+      top: 50%;
+      left: 130px;
+    }
+  }
+
+  .about-title {
+    font-size: 36px;
+    max-width: 480px;
+    color: $Grayscale50;
+    margin-bottom: 5px;
+
+    &::after {
+      top: 130px;
+      right: 0;
+      width: 30vw;
+    }
+
+  }
+
+  .about .place {
+    font-size: 18px;
+    width: 100%;
+    padding-right: 200px;
+    font-weight: lighter;
+
+  }
+
+  .about .infrast {
+    font-size: 18px;
+    padding: 30px 1px;
+    font-weight: lighter;
+  }
+
+  .about .about-button {
+    padding-left: 1px;
+    
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    padding: 10px 0;
+  }
+
+  .about-title {
+    font-size: 36px;
+    max-width: 100%;
+    margin-bottom: 5px;
+
+    &::before {
+      width: 0;
+    }
+  }
+
+
+
+  .about .place {
+    font-size: 18px;
+    width: 70%;
+
+  }
+
+  .about .infrast {
+    font-size: 18px;
+    max-width: 80%;
+    padding: 20px 5px;
+
+
+  }
+
+  .about .about-button {
+    padding-left: 5px;
+  }
+
+  .about .image-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about .infrast {
+    font-size: 15px;
+    max-width: 80%;
+    padding: 20px 5px;
+
+
+  }
+
+  .about .about-button {
+    padding-left: 5px;
+  }
+  .about-bk {
+    span {
+      font-size: 12px;
+      font-weight: normal;
+    }
+  }
+  .about-title {
+    font-size: 20px;
+    
+  }
+  .image-text p {
+    font-size: 16px;
+    font-weight: bold;
+
+  }
+}
